@@ -8,19 +8,13 @@ body {
   color: #777;
   background-color: #777;
   margin: 8px;
-  margin-left:8%;
-  margin-right:8%;
+  margin-left:5%;
+  margin-right:5%;
   width:960px;
   font-size: 18px;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 
 }
-
-
-p{
-
-}
-
 
 header {
   padding: 20px;
@@ -33,20 +27,20 @@ nav {
   background: #ebebeb;
 }
 
+#box {
+  /* display:flex; */
+  position: relative;
+  overflow:hidden;
+  margin-bottom: 2%;
+}
 
 #section {
   float:left;
-
+  position: relative;
   background: #ebebeb;
   padding: 10px;
-  width: 495px;
-  margin-right: 2%; /* used % since widths were being defined in % */
-}
-
-#box {
-  display:flex;
-  margin-bottom: 2%;
-  /* Originally container was smaller, causing "aside" to be smaller. Flex allowed the container to expand based on internal sections */
+  width: 49%; /* used % since body width=960px being greater than 495px requested */
+  margin-right: 2%; 
 }
 
 
@@ -55,14 +49,15 @@ nav {
   font-weight:bold;
   padding: 15px;
   color: #777;
-  /* margin-bottom: 0%; */
   background: #ebebeb;
 }
 
 #aside {
-  float:left;
+  position: absolute;
+  right: 0;
   background-color: #ebebeb;
-  width: 495px;
+  width: 49%;
+  height:600px;
   padding: 20px;
 }
 
