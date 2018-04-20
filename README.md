@@ -13,7 +13,7 @@ Includes the following HTML tags and CSS elements:
 - Section
 - Aside
 - Article
-- Headings(h1, h2, h3)
+- Headings (h1, h2, h3)
 - Paragraph (p)
 - Footer
 
